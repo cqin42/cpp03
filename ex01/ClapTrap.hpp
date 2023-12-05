@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 22:58:09 by christine         #+#    #+#             */
-/*   Updated: 2023/12/05 17:38:59 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/05 15:19:33 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ private :
 	unsigned int	_hitPoints;
 	unsigned int	_energyPoints;
 	unsigned int	_attackDamage;
+
+
 };
 
 #endif
