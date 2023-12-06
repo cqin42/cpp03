@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   DiamondTrap.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/05 13:10:32 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/06 13:16:33 by cqin             ###   ########.fr       */
+/*   Created: 2023/12/06 14:08:07 by cqin              #+#    #+#             */
+/*   Updated: 2023/12/06 14:26:14 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 
-int main (void)
-{
-	ScavTrap lol("lol");
-	std::cout << lol.getEnergyPoints() << std::endl;
-	std::cout << lol.getHitPoints() << std::endl;
-	std::cout << lol.getAttackDamage() << std::endl;
-	lol.attack("lala");
-	lol.guardGate();
-	std::cout << lol.getEnergyPoints() << std::endl;
-	lol.takeDamage(50);
-	std::cout << lol.getHitPoints() << std::endl;
-}
+DiamondTrap::DiamondTrap(std::string name)
+DiamondTrap::~DiamondTrap();
+
+DiamondTrap::DiamondTrap(const DiamondTrap &autre);
+DiamondTrap DiamondTrap::operator=(const DiamondTrap &autre);
+
+void DiamondTrap::whoAmI();

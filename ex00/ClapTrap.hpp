@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 22:58:09 by christine         #+#    #+#             */
-/*   Updated: 2023/12/05 17:38:59 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/06 11:38:56 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 class ClapTrap
 {
 public :
+	
 	ClapTrap(std::string name);
 	~ClapTrap();
 

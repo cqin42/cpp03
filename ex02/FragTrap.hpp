@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/05 13:10:32 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/06 13:16:33 by cqin             ###   ########.fr       */
+/*   Created: 2023/12/06 13:12:19 by cqin              #+#    #+#             */
+/*   Updated: 2023/12/06 13:34:37 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
 
-int main (void)
+#include "ClapTrap.hpp"
+
+class FragTrap : public ClapTrap
 {
-	ScavTrap lol("lol");
-	std::cout << lol.getEnergyPoints() << std::endl;
-	std::cout << lol.getHitPoints() << std::endl;
-	std::cout << lol.getAttackDamage() << std::endl;
-	lol.attack("lala");
-	lol.guardGate();
-	std::cout << lol.getEnergyPoints() << std::endl;
-	lol.takeDamage(50);
-	std::cout << lol.getHitPoints() << std::endl;
-}
+	public :
+		FragTrap(std::string name);
+		~FragTrap();
+
+		FragTrap(const FragTrap &autre);
+		FragTrap operator=(const FragTrap &autre);
+
+		void highFivesGuys(void);
+};
+
+#endif
