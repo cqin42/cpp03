@@ -6,12 +6,12 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 13:12:19 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/06 13:34:37 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/07 13:07:09 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
 #include "ClapTrap.hpp"
 

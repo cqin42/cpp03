@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 22:58:09 by christine         #+#    #+#             */
-/*   Updated: 2023/12/06 12:35:20 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/07 10:58:08 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class ClapTrap
 {
 public :
-	ClapTrap();
+
 	ClapTrap(std::string name);
 	~ClapTrap();
 
@@ -40,7 +40,6 @@ protected :
 	unsigned int	_hitPoints;
 	unsigned int	_energyPoints;
 	unsigned int	_attackDamage;
-
 };
 
 #endif

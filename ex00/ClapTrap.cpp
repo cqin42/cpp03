@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 23:19:36 by christine         #+#    #+#             */
-/*   Updated: 2023/12/05 16:10:39 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/07 11:03:21 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,24 @@
 
 ClapTrap::ClapTrap(std::string name): _name(name),_hitPoints(10),_energyPoints(10),_attackDamage(0)
 {
+	std::cout << " * ClapTrap constructor called" << std::endl;
 	std::cout << name << " is created." << std::endl;
 }
 
 ClapTrap::~ClapTrap()
 {
+	std::cout << " * ClapTrap Destructor called" << std::endl;
 	std::cout << this->_name << " is destroyed." << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &autre)
 {
-	std::cout << "Copy constructor called" << std::endl;
+	std::cout << " * ClapTrap Copy constructor called" << std::endl;
 	*this = autre;
 }
 ClapTrap& ClapTrap::operator=(const ClapTrap &autre)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
+	std::cout << " * ClapTrap Copy assignment operator called" << std::endl;
 	if (this != &autre)
 	{
 		this->_name = autre.getName();
@@ -78,7 +80,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 {
 	if (this->_hitPoints < amount)
 	{
-		std::cout << this->_name << " take " << this->_hitPoints << " points of damage!" << std::endl;
+		std::cout << this->_name << " take " << amount << " points of damage!" << std::endl;
 		this->_hitPoints = 0;
 	}
 	else

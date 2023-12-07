@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 13:10:32 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/05 16:02:02 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/07 14:04:41 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int main (void)
 {
 	ClapTrap gg("gg");
-	// ClapTrap ii("ii");
+	ClapTrap ii("ii");
 
 	std::cout << gg.getName() << " have " << gg.getEnergyPoints() << " energy points" << std::endl;
 	gg.attack("ii");
